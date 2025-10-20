@@ -63,7 +63,7 @@ function App() {
 
   const diaryPages = [
     { image: diary1, story: "Hello Sir, aise hi khus raho aap dono" },
-    { image: diary2, story: "Deva, remeber this place...." },
+    { image: diary2, story: "Deva, remember this place...." },
     { image: diary3, story: "Ummmmmm,so sweet...Bhaiya ek cup or ho jaaye" },
     { image: diary4, story: "Spiderman, Spiderman......" },
     { image: diary5, story: "Om namah Sivay..... Mai hu baaba tillu.....ek phookh maar k bhasm kar dunga" },
