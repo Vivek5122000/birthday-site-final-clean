@@ -8,8 +8,6 @@ import cakeLit from "./assets/Candles Lit.jpg";
 import cakeBlown from "./assets/Candles blow.jpg";
 
 // Diary images
-import diary1 from "./assets/diary1.jpg";
-import diary2 from "./assets/diary2.jpg";
 import diary3 from "./assets/diary3.jpg";
 import diary4 from "./assets/diary4.jpeg";
 import diary5 from "./assets/diary5.jpeg";
@@ -38,16 +36,14 @@ function App() {
 
   const audioRef = useRef(null);
 
-  // Start background music once when component mounts
   useEffect(() => {
     const audio = audioRef.current;
     if (audio) {
-      audio.currentTime = 0.3; // start from 0.3 sec
-      audio.play().catch(() => {}); // handle autoplay block
+      audio.currentTime = 0.3;
+      audio.play().catch(() => {});
     }
   }, []);
 
-  // Pause music only when entering video pages
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -62,9 +58,7 @@ function App() {
   }, [page]);
 
   const diaryPages = [
-    { image: diary1, story: "Hello Sir, aise hi khus raho aap dono" },
-    { image: diary2, story: "Deva, remember this place...." },
-    { image: diary3, story: "Ummmmmm,so sweet...Bhaiya ek cup or ho jaaye" },
+    { image: diary3, story: "Ummmmmm, so sweet...Bhaiya ek cup or ho jaaye" },
     { image: diary4, story: "Spiderman, Spiderman......" },
     { image: diary5, story: "Om namah Sivay..... Mai hu baaba tillu.....ek phookh maar k bhasm kar dunga" },
     { image: diary6, story: "All these memories make today extra special. Happy Birthday once again!" },
